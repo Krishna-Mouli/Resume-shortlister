@@ -1,12 +1,10 @@
-#  Getting Started with Resume Analyzer Python(Fast API) backend for PaLTech screening process 
+#  Getting Started with Resume Analyzer Python(Fast API) backend 
 
-![logo](images/palogo.png)
+# Architecture Followed
 
-# Architecture Followed for Assignment (POC)
+![Arch](images/Arch.png)
 
-![Arch](images/PalTech.png)
-
-The following is a rough architecture diagrm of the use case. We could discuss further improvements and additional developments. 
+The following is a rough architecture diagrm of the use case.
 
 For running the FastAPI backend make sure you have python installed, I would recommend installing the 3.12 version as that's what I have used to develop. Python install: [python 3.12](https://www.python.org/downloads/release/python-3127/)
 
@@ -20,11 +18,11 @@ Once this is done, install Azurite from Microsoft Azure's website along with Azu
 ```ymal
 database:
   connectionstrng: 
-  containername: paltechresumeshortlisterapp
+  containername: resumeshortlisterapp
 vectorstore:
   pineconekey: 
-  pineconeindex: paltech-interview-vectors
-  pineconenamespace: paltech-interview-namespace
+  pineconeindex: interview-vectors
+  pineconenamespace: interview-namespace
 chunking:
   chunkstatagy: recursive
   chunksize: 800
@@ -35,7 +33,7 @@ openai:
   embeddingmodel: text-embedding-3-large
   vectordimensions: 3072
 user:
-  defaultuser: john.doe@pal.tech
+  defaultuser: john.doe@software.tech
 ```
 
 Along with this also get your OpenAI key, PineCone Vector namepace name and the API key. After all is successfully placed, toggle azurite from the command pallet. Also do not forget to set the CORS policy for the blob container that you wish to access/user.

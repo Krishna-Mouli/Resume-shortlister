@@ -8,7 +8,7 @@ import logging
 class TableRepository:
     def __init__(self, entity_type):
         _config = Configuration()
-        self.table_name = f"{entity_type.__name__}sPALTECH"
+        self.table_name = f"{entity_type.__name__}s"
         self.conn_str = _config.get_config_values(ConfigurationTypes.ConnectionString.value)
         service_client = TableServiceClient.from_connection_string(self.conn_str)
         self.client = service_client.get_table_client(table_name=self.table_name)

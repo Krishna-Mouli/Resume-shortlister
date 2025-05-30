@@ -21,7 +21,7 @@ const Navbar = () => {
             variant="h6"
             noWrap
           >
-            PaLTech Resume Analyzer - Demo
+          Resume Analyzer
           </Typography>
         </div>
         <Box sx={{ display: 'flex', marginLeft: 'auto', marginRight: '30px' }}>

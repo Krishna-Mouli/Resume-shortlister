@@ -3,7 +3,7 @@ from starlette.middleware.cors import CORSMiddleware
 from APIs import api_version_router
 import uvicorn
 
-app = FastAPI(title="paltech-pfb-assignment")
+app = FastAPI(title="Resume-Analyzer")
 
 origins = [
     "http://localhost:3000"

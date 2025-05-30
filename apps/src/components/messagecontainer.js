@@ -21,7 +21,7 @@ export const MessageContainer = ({isBot, message})=>{
                         { isBot ?
                             "AI"
                             :
-                            "PaLTech HR"
+                            "HR"
                         }
                     </Typography>
                 </Box>

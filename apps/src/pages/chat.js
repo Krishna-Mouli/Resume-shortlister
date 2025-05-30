@@ -128,7 +128,7 @@ const Chat = () => {
                             fontFamily: "monospace, Courier New, Courier",
                         }}
                     >
-                        PaLTech
+                        Software Company
                     </Typography>
                 </Box>
                 <Box

@@ -1,5 +1,4 @@
 import { Box, Typography } from '@mui/material';
-import paltech from '../../assets/images/paltech.png';
 import { InitialScreenCard } from './InitialScreenCard';
 
 export const InitialScreen = ()=>{
@@ -25,9 +24,9 @@ export const InitialScreen = ()=>{
                     Chat with Resume
                 </Typography>
             </Box>
-            <Box className='spinner-logo'>
-                <img width={150} src={paltech} className='spinner-img' alt='spinner' style={{ borderRadius: '50%' }} />
-            </Box>
+            {/* <Box className='spinner-logo'>
+                <img width={150} src={} className='spinner-img' alt='spinner' style={{ borderRadius: '50%' }} />
+            </Box> */}
             <Box style={{display:'flex', marginTop:'30px', gap:'10px'}}>
                 {
                     cards
