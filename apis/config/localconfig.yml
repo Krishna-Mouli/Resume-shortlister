@@ -1,10 +1,10 @@
 database:
   connectionstrng: 
-  containername: paltechresumeshortlisterapp
+  containername: resumeshortlisterapp
 vectorstore:
   pineconekey: 
-  pineconeindex: paltech-interview-vectors
-  pineconenamespace: paltech-interview-namespace
+  pineconeindex: resumeshortlistervectors
+  pineconenamespace: resumeshortlisternamespace
 chunking:
   chunkstatagy: recursive
   chunksize: 800
@@ -15,4 +15,4 @@ openai:
   embeddingmodel: text-embedding-3-large
   vectordimensions: 3072
 user:
-  defaultuser: john.doe@pal.tech
+  defaultuser: john.doe@software.tech
