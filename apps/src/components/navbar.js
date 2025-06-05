@@ -60,6 +60,15 @@ const Navbar = () => {
               Questionnaire
             </NavLink>
           </Typography>
+
+          <Typography
+            variant="body1"
+            sx={{ marginLeft: 3, fontWeight: 500, cursor: 'pointer', '&:hover': { color: '#f0f0f0' } }}
+          >
+            <NavLink to="/process/info" style={{ color: 'inherit', textDecoration: 'none' }}>
+              Info
+            </NavLink>
+          </Typography>
         </Box>
       </Toolbar>
     </AppBar>
